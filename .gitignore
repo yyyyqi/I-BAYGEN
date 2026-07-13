@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+
+# Local outputs and experiment artifacts
+outputs/
+results/
+results*/
+evaluation_results*/
+
+# Local models and checkpoints
+models/
+model/
+checkpoint-*/
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# Logs
+*.log
+runs/
+
