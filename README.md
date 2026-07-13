@@ -1,7 +1,5 @@
 # I-BAYGEN
 
-Minimal implementation of I-BAYGEN rejection sampling with weighted reward.
-
 ## Install
 
 ```bash
@@ -21,7 +19,7 @@ modelscope download --model iic/gte-Qwen2-1.5B-instruct --local_dir path/to/mode
 
 ## Run
 
-Input JSONL should contain a problem, candidate reasoning paths, and the gold solution/code.
+Input JSONL should contain a problem, candidate reasoning paths, and the ground truth code.
 
 ```bash
 python rejection_sampling.py run \
@@ -36,7 +34,7 @@ For a quick pipeline check without loading a model:
 ```bash
 python rejection_sampling.py run \
   --data_path path/to/data.jsonl \
-  --output_path outputs/smoke.jsonl \
+  --output_path outputs/output.jsonl \
   --limit 2
 ```
 
