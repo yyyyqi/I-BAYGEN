@@ -48,7 +48,3 @@ Each output row includes:
 
 `unweighted_selected` uses the sum of gold-code token log-probabilities.  
 `weighted_selected` reweights gold-code token log-probabilities by token difficulty.
-
-## Notes
-
-Do not commit local models or generated outputs. They are ignored by `.gitignore`.
